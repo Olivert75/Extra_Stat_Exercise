@@ -27,4 +27,8 @@ wiz_df['wiz_1_att'] = Wiz_1_Attack
 wiz_df['wiz_2_hp'] = Wiz_2_HP
 wiz_df['wiz_2_att'] = Wiz_2_Attack
 
+#Create simulation battle
+wiz_df['wins']= (wiz_df.wiz_1_hp > wiz_df.wiz_2_att) & (wiz_df.wiz_2_hp <= wiz_df.wiz_1_att)
+num_wins = wiz_df.wins.mean()
 
+num_wins
