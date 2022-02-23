@@ -19,6 +19,3 @@ def Wiz_stats():
 
 Wiz_stats()
 Wiz_1_HP, Wiz_1_Attack, Wiz_2_HP, Wiz_2_Attack = Wiz_stats()
-
-Wiz_1_HP
-Wiz_1_Attack
