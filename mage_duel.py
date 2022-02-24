@@ -21,11 +21,13 @@ def Wiz_stats():
 Wiz_1_HP, Wiz_1_Attack, Wiz_2_HP, Wiz_2_Attack = Wiz_stats()
 
 #Create a dataframe 
-wiz_df = pd.DataFrame()
+wiz_df = pd.DataFrame(Wiz_stats())
 wiz_df['wiz_1_hp'] = Wiz_1_HP
 wiz_df['wiz_1_att'] = Wiz_1_Attack
 wiz_df['wiz_2_hp'] = Wiz_2_HP
 wiz_df['wiz_2_att'] = Wiz_2_Attack
+
+wiz_df.wiz_1_hp
 
 #Create simulation battle
 wiz_df['wins']= (wiz_df.wiz_1_hp > wiz_df.wiz_2_att) & (wiz_df.wiz_2_hp <= wiz_df.wiz_1_att)
